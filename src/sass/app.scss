@@ -1,0 +1,15 @@
+*{
+    transition: all ease 0.8s;
+}
+// imports
+
+@import "./_login.scss";
+@import "./loginSignup";
+@import "./navbar";
+
+// extend file 
+.displayFlex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,93 @@
+.container {
+    background: url('../assets/images/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    @extend .displayFlex;
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+}
+.mainContainer {
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.287);
+    min-height: 381.891px;
+    min-width: 493.594px;
+    @extend .displayFlex;
+    background: white;
+    border-radius: 20px;
+    position: relative;
+    max-width: 1000px;
+    max-height: 425px;
+    overflow: hidden;
+    padding: 0px;
+    height: 95vh;
+    width: 80vw;
+    
+    .buttonsContainer{
+        background: linear-gradient(to top,#0ed0e0,#ef0afe);
+        // background: linear-gradient(to right,#7855c8,#cb53bd,#fcc476);
+        // background: linear-gradient(to right,purple,rgb(228, 19, 200),rgb(221, 192, 27),orange);
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        height: 100%;
+        width: 100%;
+        flex: 1;
+        >.linkBtn {
+            box-shadow: 8px 0px 8px rgba(0, 0, 0, 0.507);
+            border-bottom-right-radius: 8px;
+            border-top-right-radius: 8px;
+            text-decoration: none;
+            text-align: center;
+            font-size: 1.5em;
+            margin: 10px 0px;
+            font-weight: 500;
+            padding: 10px;
+            width: 140px;
+            border: none;
+            z-index: 8;
+        }
+        .circle{
+            position: absolute;
+            border-radius: 50%;
+            box-shadow: 0 0 4px rgba(0, 0, 0, 0.068);
+            z-index: 1;
+            aspect-ratio: 1/1;
+            background: linear-gradient(to bottom,#0ed0e0, #ef0afe);
+        }
+        .circle1 {
+            background: linear-gradient(to bottom,#7855c8,#cb53bd,#fcc476);
+            // background: linear-gradient(to bottom,#754eaf,#c653ba,#e0849c,#fcc476);
+            // background: linear-gradient(to bottom,purple,rgb(228, 19, 200),rgb(221, 192, 27),orange);
+            top: -12vh;
+            left: -17vh;
+            height: 70vh;
+            z-index: 6;
+        }
+        .circle2 {
+            bottom: -15vh;
+            left: -10vh;
+            height: 40vh;
+            z-index: 5;
+        }
+        .circle3 {
+            bottom: -12vh;
+            right: 0vh;
+            height: 58vh;
+            z-index: 2;
+        }
+        .circle4 {
+            bottom: 5vh;
+            right: -10vh;
+            height: 43vh;
+            z-index: 4;
+        }
+        .circle5 {
+            top: 6vh;
+            right: -10vh;
+            height: 48vh;
+            z-index: 3;
+        }
+    }
+}
