@@ -3,11 +3,12 @@ import { Link, Outlet } from 'react-router-dom'
 
 
 
-export default function LoginSignup(props) {
+export default function LoginSignup() {
+
     return (
         <div className='container'>
            <div className="mainContainer">
-                <Outlet/>
+                <Outlet />
                 <div className="buttonsContainer">
                     <Link className={`linkBtn activeLBtn`} to="/login">Login</Link>
                     <Link className='linkBtn activeSBtn' to="/signup">Sign up</Link>
