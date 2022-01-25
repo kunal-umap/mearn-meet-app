@@ -1,10 +1,19 @@
-import React from 'react'
+import React from 'react';
+import { useDispatch } from 'react-redux';
+import { logoutAction } from '../container/action';
+import Logout from './Logout';
+
+
 
 export default function NavBar() {
+    const disptch = useDispatch();
+    const logout = ()=>{
+        disptch(logoutAction());
+    }
     return (
         <nav>
             <h1>NavBar</h1>
-            <h2>Logout</h2>
+            <Logout logout={logout}/>
         </nav>
     )
 }

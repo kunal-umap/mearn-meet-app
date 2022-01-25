@@ -1,0 +1,6 @@
+export const SUCCESSFULLY_LOGIN = "SUCCESSFULLY_LOGIN";
+export const FAIL_LOGIN = "FAIL_LOGIN";
+export const SUCCESSFULLY_SIGNUP = "SUCCESSFULLY_SIGNUP";
+export const FAIL_SIGNUP = "FAIL_SIGNUP";
+export const LOGOUT = "LOGOUT";
+export const STORE_MESSAGE = "STORE_MESSAGE";

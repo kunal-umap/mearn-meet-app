@@ -6,6 +6,7 @@ import Login from "./components/Login";
 import Signup from "./components/Signup";
 import LoginSignup from "./pages/LoginSignup";
 import Hompage from "./pages/Hompage";
+import VideoCall from "./pages/VideoCall";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/login" element={<Login/>} />
           <Route path="/signup" element={<Signup/>} />
         </Route>
+        <Route path="/:id" element={<VideoCall/>} />
       </Routes>
     </BrowserRouter>
   );

@@ -1,8 +1,7 @@
 const bcrypt = require('bcrypt');
+const jwt = require('jsonwebtoken');
 
 const User = require('../model/schema');
-
-const jwt = require('jsonwebtoken');
 
 
 exports.signup = async (req,res)=>{
@@ -87,7 +86,6 @@ exports.login =async (req,res)=>{
         // creat jet token 
 
         const verifyJwt = jwt.sign({id:user._id},process.env.JWT_SECRET);
-
         res.json({verifyJwt,username: user.username,email: user.email});
         
     } catch (error) {
