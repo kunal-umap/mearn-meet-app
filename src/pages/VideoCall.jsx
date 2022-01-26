@@ -5,7 +5,7 @@ import { io } from 'socket.io-client';
 import Footer from '../components/Footer';
 import { IncommingCall } from '../components/IncommingCall';
 
-const socket = io('http://localhost:4000/');
+const socket = io('https://meet-app-prj.herokuapp.com/');
 
 export default function VideoCall() {
   const [callAccepted, setCallAccepted] = useState(false);

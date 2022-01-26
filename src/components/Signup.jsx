@@ -22,9 +22,9 @@ export default function Signup() {
         event.preventDefault();
         let values ={
             email,
-            username,
             password,
-            conformPassword
+            conformPassword,
+            username
         }
 
         const validate = dispatch(signupAction(values));

@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import shortid from 'shortid';
 import NavBar from '../components/NavBar';
 
 export default function Hompage() {
@@ -19,8 +18,7 @@ export default function Hompage() {
     
     
     const newCall = () => {
-        const id = shortid.generate();
-        navigate(`/${id}`);
+        navigate(`/call`);
     }
 
     return (
