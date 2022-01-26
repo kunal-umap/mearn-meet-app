@@ -21,7 +21,6 @@
             &:focus{
                 border-bottom: solid 2px;
                 border-image: linear-gradient(to right,#7855c8,#cb53bd,#fcc476) 1;
-                // border-image: linear-gradient(to right,purple,rgb(228, 19, 200),rgb(221, 192, 27),orange) 1;
             }     
         }
         .subBtn {
@@ -32,7 +31,6 @@
             font-size: 1em;
             font-weight: 500;
             background: linear-gradient(to right,#7855c8,#cb53bd,#fcc476);
-            // background: linear-gradient(to right,purple,rgb(228, 19, 200),rgb(221, 192, 27),orange);
             border-radius: 4px;
             box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.363);
             margin-top: 15px;
@@ -42,6 +40,11 @@
                 transform: scale(1.06);
             }
             
+        }
+    }
+    @media screen and (max-width: 549px) {
+        .inputBox {
+            min-width: 40px;
         }
     }
 }

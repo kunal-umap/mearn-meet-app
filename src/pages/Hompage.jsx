@@ -17,27 +17,21 @@ export default function Hompage() {
         }
     },[route,navigate]);
     
-    const [url,seturl] = useState('');
     
     const newCall = () => {
         const id = shortid.generate();
         navigate(`/${id}`);
     }
-    const joinCall = () => {
-        navigate(`${url}#join`);
-    }
 
     return (
-        <>
+        <div className='homepage'>
             <NavBar/>
             <div className="hero">
-            <h2>Welcome Back {name}</h2>
-            <button onClick={newCall}>Start New Call</button>
-            <form onSubmit={joinCall}>
-                <input type="text" onChange={e =>seturl(e.target.value)}/>
-                <button type="submit">join</button>
-            </form>
+                <h2>Welcome Back <span>{name}</span></h2>
+                <p>Click on start new call to make a video call</p>
+                <p>Free Video Call to anyone</p>
+                <button onClick={newCall}>Start New Call</button>
             </div>
-        </>
+        </div>
     )
 }

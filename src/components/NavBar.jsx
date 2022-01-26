@@ -12,8 +12,9 @@ export default function NavBar() {
     }
     return (
         <nav>
-            <h1>NavBar</h1>
+            <h1>KMeet</h1>
             <Logout logout={logout}/>
         </nav>
+
     )
 }

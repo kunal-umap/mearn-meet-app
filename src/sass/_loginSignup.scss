@@ -24,8 +24,6 @@
     
     .buttonsContainer{
         background: linear-gradient(to top,#0ed0e0,#ef0afe);
-        // background: linear-gradient(to right,#7855c8,#cb53bd,#fcc476);
-        // background: linear-gradient(to right,purple,rgb(228, 19, 200),rgb(221, 192, 27),orange);
         justify-content: center;
         flex-direction: column;
         position: relative;
@@ -58,8 +56,6 @@
         }
         .circle1 {
             background: linear-gradient(to bottom,#7855c8,#cb53bd,#fcc476);
-            // background: linear-gradient(to bottom,#754eaf,#c653ba,#e0849c,#fcc476);
-            // background: linear-gradient(to bottom,purple,rgb(228, 19, 200),rgb(221, 192, 27),orange);
             top: -12vh;
             left: -17vh;
             height: 70vh;
@@ -88,6 +84,31 @@
             right: -10vh;
             height: 48vh;
             z-index: 3;
+        }
+    }
+    @media screen and (max-width: 549px) {
+        flex-direction: column-reverse;
+        margin-top: 10px;
+        min-width: none;
+        height: auto;
+        min-height: auto;
+        max-height: max-content;
+        min-width: 10px;
+        max-width: 400px;
+        width: 98vw;
+        .buttonsContainer {
+            flex-direction: row;
+            height: 60px;
+            min-height: 50px;
+            justify-content: baseline;
+            .linkBtn {
+                border-top-left-radius: 8px;
+                border-bottom-right-radius: 0px;
+                margin: 6px;
+                // height: 50px;
+                bottom: 0;
+                margin-bottom: 0;
+            }
         }
     }
 }

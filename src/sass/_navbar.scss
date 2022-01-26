@@ -1,10 +1,23 @@
 nav{
     display: flex;
     margin: 0px;
+    padding: 12px;
     align-items: center;
     justify-content: space-between;
     h1,h2{
         margin: 4px 20px;
     }
     box-shadow: 2px 0px 8px grey;
+    .link {
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 550;
+        color: white;
+        background: red;
+        padding: 9px 16px;
+        border-radius: 8px;
+        &:hover{
+            background: black;
+        }
+    }
 }

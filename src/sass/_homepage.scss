@@ -1,0 +1,41 @@
+.hero {
+    display: flex;
+    width: 80%;
+    border-radius: 8px;
+    max-width: 500px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 22px auto;
+    padding: 18px 32px;
+    box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.247);
+    h2 {
+        font-size: 28px;
+        span {
+            color: blue;
+            text-transform: uppercase;
+        }
+    }
+    p {
+        background: -webkit-linear-gradient(45deg ,#7855c8,#cb53bd,#fcc476);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 17px;
+        font-weight: 600;
+        margin: 10px 0px 18px 0px;
+    }
+    button {
+        width: 150px;
+        padding: 14px;
+        font-weight: 500;
+        font-size: 16px;
+        color: white;
+        background: linear-gradient(to right,#7855c8,#cb53bd,#fcc476);
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}

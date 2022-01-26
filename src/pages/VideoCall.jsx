@@ -10,6 +10,7 @@ const socket = io('http://localhost:4000/');
 export default function VideoCall() {
   const [callAccepted, setCallAccepted] = useState(false);
   const [callEnded, setCallEnded] = useState(false);
+  // const [isPresenting, SetisPresenting] = useState(false);
   const [stream, setStream] = useState();
   const [name, setName] = useState('');
   const [call, setCall] = useState({});
@@ -91,6 +92,13 @@ export default function VideoCall() {
     connectionRef.current = peer;
   };
 
+  
+  // const screenShare = () => {
+
+  // };
+  // const stopScreenShare = () => {
+    
+  // };
   const leaveCall = () => {
     setCallEnded(true);
     connectionRef.current.destroy();
@@ -100,6 +108,7 @@ export default function VideoCall() {
 
   return (
     <div className='VideoCallPageContainer'>
+
       <div className="videoContainer">
         {
           stream && 
@@ -130,6 +139,8 @@ export default function VideoCall() {
           leaveCall={leaveCall}
           callAccepted={callAccepted}
           callEnded={callEnded}
+          // screenShare={isPresenting?stopScreenShare:screenShare}
+          // isPresenting={isPresenting}
         />
         {
           call.isReceivingCall && !callAccepted &&

@@ -21,6 +21,12 @@ export default function Footer(props) {
               <button className='endBtm' onClick={props.leaveCall}>End Call</button>
             )
           }
+          {/* {  
+          !props.callEnded && props.callAccepted &&
+            (
+              <button className='screenShare' onClick={props.screenShare}>{props.isPresenting?"Stop":"Present"}</button>
+            )
+          } */}
         </div>
     </div>
   );

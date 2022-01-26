@@ -2,7 +2,7 @@
     display: flex;
     background: white;
     width: 100%;
-    position: absolute;
+    position: fixed;
     justify-content: space-around;
     bottom: 0;
     left: 0;
@@ -12,8 +12,8 @@
     text-align: center;
     .callUser {
         display: flex;
+        flex-shrink: 1;
         padding: 8px;
-        // height: 75px;
         flex-direction: column;
         input {
             padding: 6px;
@@ -22,33 +22,32 @@
             border: 1px solid rgba(128, 128, 128, 0.692);
         }
         button {
+            flex-shrink: 1;
             padding: 6px;
             margin: 4px;
             border-radius: 4px;
             border: none;
             color: #fff;
-        background: linear-gradient(to right,#7855c8,#cb53bd,#fcc476);
-
-            // background: rgb(105, 105, 211);
+            background: linear-gradient(to right,#7855c8,#cb53bd,#fcc476);
             &:hover{
                 background: rgb(157, 218, 67);
             }
         }
     }
     .reciveCall{
+        flex-shrink: 1;
         display: flex;
         padding: 8px;
         // height: 75px;
         flex-direction: column;
         button {
             padding: 6px;
+            flex-shrink: 1;
             margin: 4px;
             border-radius: 4px;
             border: none;
-        background: linear-gradient(to right,#7855c8,#cb53bd,#fcc476);
-
+            background: linear-gradient(to right,#7855c8,#cb53bd,#fcc476);
             color: #fff;
-            // background: rgb(105, 105, 211);
             &:hover{
                 background: rgb(157, 218, 67);
             }
@@ -59,9 +58,9 @@
         }
     }
     .endReload{
+        flex-shrink: 1;
         display: flex;
         padding: 8px;
-        // height: 75px;
         button {
             padding: 6px;
             flex: 1;
@@ -69,9 +68,7 @@
             border-radius: 4px;
             border: none;
             color: #fff;
-        background: linear-gradient(to right,#7855c8,#cb53bd,#fcc476);
-
-            // background: rgb(105, 105, 211);
+            background: linear-gradient(to right,#7855c8,#cb53bd,#fcc476);
             &:hover{
                 background: rgb(157, 218, 67);
             }
@@ -83,4 +80,57 @@
             }
         }
     }
+    @media screen and (max-width: 549px){
+        align-items: center;
+        .callUser{
+            width: 25vw;
+        }
+        .reciveCall{
+            h4 {
+                font-size: 8px;
+            }
+        }
+        .endReload{
+
+        }
+    }
+    @media screen and (max-width: 353px){
+        justify-content: center;
+        position: relative;
+        align-items: center;
+        flex-direction: column;
+        .callUser{
+            width: 80%;
+            margin: 0px;
+            input{
+                margin: 0px;
+            }
+            button{
+                margin: 0px;
+            }
+        }
+        .reciveCall{
+            width: 80%;
+            margin: 0px;
+            h4 {
+                font-size: 8px;
+                margin: 0px;
+            }
+            button{
+                margin: 0px;
+            }
+        }
+        .endReload{
+            width: 80%;
+            button{
+                margin: 0px;
+            }
+        }
+    }
+}
+.screenShare {
+    position: fixed;
+    top: 38%;
+    left: 0px;
+    cursor: pointer;
 }

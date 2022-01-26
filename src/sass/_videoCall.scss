@@ -49,4 +49,14 @@
     .controls {
         flex: 1;
     }
+    @media screen and (max-width: 350px) {
+        .videoContainer {
+            flex-direction: column;
+            .vdoItem {
+                video{
+                    width: 78vw;
+                }
+            }
+        }
+    }
 }
