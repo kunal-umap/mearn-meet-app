@@ -18,6 +18,7 @@ function App() {
           <Route path="/signup" element={<Signup/>} />
         </Route>
         <Route path="/call" element={<VideoCall/>} />
+        <Route path="*" exact={true} element={<VideoCall/>} />
       </Routes>
     </BrowserRouter>
   );
