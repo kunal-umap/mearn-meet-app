@@ -10,8 +10,8 @@ import VideoCall from "./pages/VideoCall";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
+    <BrowserRouter basename="/mearn-meet-app">
+      <Routes >
         <Route exact path="/" element={<Hompage/>}/>
         <Route path="/" element={<LoginSignup/>}>
           <Route path="/login" element={<Login/>} />
