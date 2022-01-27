@@ -93,9 +93,9 @@ export default function VideoCall() {
   };
 
   
-  // const screenShare = () => {
-
-  // };
+  const screenShare = () => {
+    navigate('/');
+  };
   // const stopScreenShare = () => {
     
   // };
@@ -139,8 +139,9 @@ export default function VideoCall() {
           leaveCall={leaveCall}
           callAccepted={callAccepted}
           callEnded={callEnded}
-          // screenShare={isPresenting?stopScreenShare:screenShare}
-          // isPresenting={isPresenting}
+          screenShare={screenShare}
+          setMe={setMe}
+          socket={socket}
         />
         {
           call.isReceivingCall && !callAccepted &&

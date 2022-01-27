@@ -1,7 +1,11 @@
 import React from 'react';
 
 export default function Footer(props) {
+
   function reload(){
+    props.socket.on('me', (id) =>{ 
+      props.setMe(id)
+    });
     window.location.reload();
   }
   return (
@@ -21,12 +25,12 @@ export default function Footer(props) {
               <button className='endBtm' onClick={props.leaveCall}>End Call</button>
             )
           }
-          {/* {  
-          !props.callEnded && props.callAccepted &&
+          {  
+          // !props.callEnded && props.callAccepted &&
             (
-              <button className='screenShare' onClick={props.screenShare}>{props.isPresenting?"Stop":"Present"}</button>
+              <button className='screenShare' onClick={props.screenShare}>HomePage</button>
             )
-          } */}
+          }
         </div>
     </div>
   );
