@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/mearn-meet-app/static/css/main.9f141d45.css",
-    "main.js": "/mearn-meet-app/static/js/main.b7a1deee.js",
+    "main.js": "/mearn-meet-app/static/js/main.33f8810a.js",
     "static/js/787.fc2a7817.chunk.js": "/mearn-meet-app/static/js/787.fc2a7817.chunk.js",
     "index.html": "/mearn-meet-app/index.html",
     "main.9f141d45.css.map": "/mearn-meet-app/static/css/main.9f141d45.css.map",
-    "main.b7a1deee.js.map": "/mearn-meet-app/static/js/main.b7a1deee.js.map",
+    "main.33f8810a.js.map": "/mearn-meet-app/static/js/main.33f8810a.js.map",
     "787.fc2a7817.chunk.js.map": "/mearn-meet-app/static/js/787.fc2a7817.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9f141d45.css",
-    "static/js/main.b7a1deee.js"
+    "static/js/main.33f8810a.js"
   ]
 }
