@@ -12,8 +12,8 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route exact path="/" element={<Hompage/>}/>
-        <Route path="/" element={<LoginSignup/>}>
+        <Route exact path="/mearn-meet-app/" element={<Hompage/>}/>
+        <Route path="/mearn-meet-app/" element={<LoginSignup/>}>
           <Route path="/login" element={<Login/>} />
           <Route path="/signup" element={<Signup/>} />
         </Route>
