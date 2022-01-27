@@ -30,7 +30,13 @@
    ```
     npm startReact
    ```
- 7) Woooho! 🎊🥳 All setup (**Note**: change url in serviece and video page to use your local or hosted backend)
+ 7) **If you are using local server don't forget to add .env file with given variable😁.** 
+   ```
+    PORT=
+    MONGO_URI=
+    JWT_SECRET=
+   ```
+ 8) Woooho! 🎊🥳 All setup (**Note**: change url in serviece and video page to use your local or hosted backend)
  <hr>
  <h2>Preview here🔮</h2>
  
