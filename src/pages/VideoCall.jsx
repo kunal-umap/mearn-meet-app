@@ -6,6 +6,7 @@ import Footer from '../components/Footer';
 import { IncommingCall } from '../components/IncommingCall';
 
 const socket = io('https://meet-app-prj.herokuapp.com/');
+// const socket = io('http://localhost:4000');
 
 export default function VideoCall() {
   const [callAccepted, setCallAccepted] = useState(false);
@@ -115,7 +116,7 @@ export default function VideoCall() {
           (
             <div className='vdoItem'>
               <h2>{name}</h2>
-              <video playsInline controls muted ref={myVideo} autoPlay>hgvchejwv</video>
+              <video playsInline={true} controls muted ref={myVideo} autoPlay>hgvchejwv</video>
             </div>
           )
         }
@@ -124,7 +125,7 @@ export default function VideoCall() {
           (
           <div className='vdoItem'>
             <h2>{call.name || orName}</h2>
-            <video playsInline controls ref={userVideo} autoPlay></video>
+            <video playsInline={true} controls ref={userVideo} autoPlay></video>
           </div>
           )
         }

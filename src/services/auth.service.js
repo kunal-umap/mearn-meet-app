@@ -3,6 +3,7 @@ import axios from "axios";
  
 // main URL
 const mainURL = `https://meet-app-prj.herokuapp.com/api`;
+// const mainURL = `http://localhost:4000/api`;
 
 // signup post request finction
 export const signUp = (newUser) => {
