@@ -4,7 +4,7 @@ export default function Footer(props) {
 
   function reload(){
     props.socket.on('me', (id) =>{ 
-      props.setMe(id)
+      props.setMyId(id)
     });
     window.location.reload();
   }

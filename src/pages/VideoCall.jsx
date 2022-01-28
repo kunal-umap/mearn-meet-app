@@ -15,7 +15,7 @@ export default function VideoCall() {
   const [stream, setStream] = useState();
   const [name, setName] = useState('');
   const [call, setCall] = useState({});
-  const [me, setMe] = useState('');
+  const [myId, setMyId] = useState('');
   const [idToCall, setIdToCall] = useState('');
   const [orName,setOrName] = useState('');
   const myVideo = useRef();
@@ -42,7 +42,7 @@ export default function VideoCall() {
         myVideo.current.srcObject = currentStream;
       });
       socket.on('me', (id) =>{ 
-        setMe(id)
+        setMyId(id)
       });
     socket.on('callUser', ({ from, name: callerName, signal }) => {
 
@@ -52,7 +52,7 @@ export default function VideoCall() {
 
   function CopyToClipboard(){
 
-    navigator.clipboard.writeText(me);
+    navigator.clipboard.writeText(myId);
   }
   const answerCall = () => {
     setCallAccepted(true);
@@ -77,7 +77,7 @@ export default function VideoCall() {
     const peer = new Peer({ initiator: true, trickle: false, stream });
 
     peer.on('signal', (data) => {
-      socket.emit('callUser', { userToCall: id, signalData: data, from: me, name });
+      socket.emit('callUser', { userToCall: id, signalData: data, from: myId, name });
     });
 
     peer.on('stream', (currentStream) => {
@@ -135,13 +135,13 @@ export default function VideoCall() {
           inputId={idToCall}
           setInputId={setIdToCall}
           callUser={callUser}
-          myCallId={me}
+          myCallId={myId}
           CopyToClipboard={CopyToClipboard}
           leaveCall={leaveCall}
           callAccepted={callAccepted}
           callEnded={callEnded}
           screenShare={screenShare}
-          setMe={setMe}
+          setMyId={setMyId}
           socket={socket}
         />
         {
