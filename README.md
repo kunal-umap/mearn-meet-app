@@ -1,6 +1,6 @@
 # <h1>✨ Mearn Calling App ✨</h1>
 <h3>A simple calling made by use MEARN Stack 😀</h3><hr>
-<p>Want to try learn and work on it ? Instruction are Here 👇⬇</p>
+<p>Want to try learn and work on it ? Instruction are Here 👇</p>
 <h2>How to get started?🤔</h2>
 <h3>Installation guyde🎉</h3>
 
@@ -30,13 +30,14 @@
    ```
     npm startReact
    ```
- 7) **If you are using local server don't forget to add .env file with given variable😁.** 
+ 7) **If you are using local server don't forget to add .env file or config.env with given variable😁.** 
    ```
     PORT=
     MONGO_URI=
     JWT_SECRET=
    ```
  8) Woooho! 🎊🥳 All setup (**Note**: change url in serviece and video page to use your local or hosted backend)
+ 9) if you want you can also keep frontend and backend in seperate file
  <hr>
  <h2>Preview here🔮</h2>
  
