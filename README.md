@@ -12,7 +12,7 @@
    ```
  3) **Navigate to the project directory 📁.**
    ```
-   cd mern-meet-app
+   cd meran-meet-app
    ```
  3) **Add reference to original repository (remote).[if you Want to contribute]**
    ```
